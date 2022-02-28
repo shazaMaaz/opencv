@@ -1,0 +1,6 @@
+import cv2
+# applying edge detection we can find the outlines of objects in images
+image =cv2.imread("C:/Users/Shivek/Pictures/shapes.jpg",cv2. IMREAD_GRAYSCALE)
+edged = cv2.Canny(image, 30, 150)
+cv2.imshow (edged) 
+Cv2.waitkey(0)
