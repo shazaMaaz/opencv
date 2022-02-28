@@ -1,0 +1,8 @@
+import cv2
+image =cv2.imread("C:/Users/Shivek/Pictures/doctors.jpg",cv2.IMREAD_COLOR)
+# draw a blue 20px (filled in) circle on the image centered at
+# x=300,y=150
+Output = image.copy ()
+cv2.circle(output, (300, 150), 20, (255, 0, 0), -1)
+cv2.imshow (output)
+Cv2.waitkey(0)
