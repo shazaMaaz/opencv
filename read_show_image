@@ -1,0 +1,6 @@
+import cv2
+ # load it in GRAYSCALE color mode...
+ image = cv2.imread("""C:/Users/Shivek/Pictures/image1.jpg""", 0)
+ cv2.imshow('Analytics Vidhya Computer Vision- Nature.png Gray', image)
+ cv2.waitKey()
+ cv2.destroyAllWindows()
