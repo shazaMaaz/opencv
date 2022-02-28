@@ -1,0 +1,11 @@
+import cv2
+# load the image in a GRAYSCALE format
+image = cv2.imread("C:/Users/Shivek/Pictures/cd0c13629f217c1ab72c61d0664b3f99.jpg", cv2.IMREAD_GRAYSCALE)
+cv2.imshow('Analytics Vidhya Computer Vision- Nature Standard Image', image)
+cv2.waitKey()
+cv2.destroyAllWindows()
+# resize the image to be pixel dimensions 350 by 350
+resized_image = cv2.resize(image, dsize=(350, 350))
+cv2.imshow('Analytics Vidhya Computer Vision- Nature Resized (350, 350)', resized_image)
+ cv2.waitKey()
+ cv2.destroyAllWindows()
