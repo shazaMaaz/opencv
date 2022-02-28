@@ -1,0 +1,7 @@
+import cv2
+# applying edge detection we can find the outlines of objects in images
+# threshold the image by setting all pixel values less than 225 to 255 (white; foreground) and all pixel values >= 225 to 255 (black; background), thereby segmenting the image
+image =cv2.imread("C:/Users/Shivek/Pictures/shapes.jpg",cv2. IMREAD_GRAYSCALE)
+thresh = cv2.threshold(image, 225, 255, cv2.THRESH_BINARY_INV)[1]
+cv2.imshow (thresh)
+Cv2.waitkey(0)
