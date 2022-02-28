@@ -1,0 +1,8 @@
+import cv2
+image =cv2.imread("C:/Users/Shivek/Pictures/doctors.jpg",cv2.IMREAD_COLOR)
+h,w =image.shape[0:2]
+center = (w//2 , h//2)
+M=cv2.getrotationMatrix2d(center,-45,1.0)
+Rotated=cv2.warpAffine(image,M,(w,h))
+Cv2.imshow("المكتبةُ المفتوحةُ للرُّؤيةِ الحاسُوبيَّةِ (OpenCv )Rotation", Rotated)
+Cv2.waitkey(0)
