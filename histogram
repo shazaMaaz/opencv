@@ -1,0 +1,7 @@
+import cv2
+from matplotlib import pyplot as plt
+grayImg = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+hist = cv2.calcHist([grayImg],[0],None,[256],[0,256])
+plt.plot(hist)
+plt.show()
+cv2.waitKey(0)
