@@ -1,0 +1,11 @@
+import cv2
+# load the image in color mode...
+image =cv2.imread("C:/Users/Shivek/Pictures/flower.jpg",cv2.IMREAD_COLOR)
+height,width=image.shape[0:2]
+startRow = int(height*.15)
+endRow = int(height*.85)
+startCol = int(width*.15)
+endCol = int(width *.85)
+croppedImage = image [startRow : endRow , startCol : endCol]
+cv2.imshow (croppedImage)
+cv2.waitKey(0)
