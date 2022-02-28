@@ -1,0 +1,6 @@
+import cv2
+# load the image in color mode...
+image = cv2.imread("C:/Users/Shivek/Pictures/cd0c13629f217c1ab72c61d0664b3f99.jpg", cv2.IMREAD_COLOR)
+grayImg=cv2.cvtcolor(image,COLOR_BGR2GRAY)
+cv2.imshow(grayImg)
+cv2.waitKey(0)
