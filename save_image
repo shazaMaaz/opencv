@@ -1,0 +1,7 @@
+import cv2
+import os
+# load the image in a GRAYSCALE format
+image = cv2.imread("C:/Users/Shivek/Pictures/cd0c13629f217c1ab72c61d0664b3f99.jpg", cv2.IMREAD_GRAYSCALE)
+path= 'c\\User\\Windows.10\\Desktop'
+cv2.imwrite (os.path.join(path,"newImg.png"),image)
+cv2.waitKey(0)
