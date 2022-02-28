@@ -1,0 +1,7 @@
+import cv2
+image =cv2.imread("C:/Users/Shivek/Pictures/doctors.jpg",cv2.IMREAD_COLOR)
+# draw a 5px thick red line from x=60,y=20 to x=400,y=200
+Output = image.copy ()
+cv2.line(output, (60, 20), (400, 200), (0, 0, 255), 5)
+cv2.imshow (output)
+Cv2.waitkey(0)
