@@ -1,0 +1,4 @@
+print(image.shape)
+print("Image Height: %d Pixels"%(image.shape[0]))
+print("Image Width: %d Pixels"%(image.shape[1]))
+print("Number Of Color Channels: %d "%(image.shape[2]))
