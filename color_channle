@@ -1,0 +1,6 @@
+import cv2
+# re-load it in color mode...
+image = cv2.imread("C:/Users/Shivek/Pictures/cd0c13629f217c1ab72c61d0664b3f99.jpg", cv2.IMREAD_COLOR)
+cv2.imshow('Analytics Vidhya Computer Vision- Nature.png Color', image)
+cv2.waitKey()
+cv2.destroyAllWindows()
